@@ -3,7 +3,7 @@
  
  Очень простой бекэнд для тестового проекта
  
- ## Установка 
+ ## Сборка и запуск проекта
  #### сборка проекта
  `composer install`
  #### сгенерировать ssh ключи:
@@ -13,6 +13,9 @@
  $ openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
  $ openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
  ```
+### запуск 
+`symfony serve`
+
 Passphrase по умолчанию `ebb4fd20f9eb524fe88ae291aca22e8a`
 
  База данных 
